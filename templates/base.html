@@ -1,0 +1,27 @@
+{% load i18n static %}<!DOCTYPE html>
+<html lang="es" class="notranslate" translate="no">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <!-- for responsive webpages -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="example app" />
+    <title>{% block title %}{% endblock %}</title>
+    <!-- <link rel="shortcut icon" type="image/png" href="/static/images/bg_icon.png"/> -->
+
+    {% block customcss %}{% endblock %}
+    </head>
+    <body>
+      <div class="main">
+        <div class="content">
+          {% block content %}
+          {% endblock %}
+            <div class="footer">
+                Empresa | Desarrollado por: <a href="https://linktr.ee/jeancahu">Jean Hidalgo</a>
+            </div>
+        </div>
+      </div>
+      <!-- <script src="{% static 'js/base.bundle.js' %}"></script> -->
+      {% block customjs %}{% endblock %}
+  </body>
+</html>
